@@ -1,0 +1,55 @@
+.wrapper {
+  width: 600px;
+  margin: 50px auto;
+  font-family: "Palanquin", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion .item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion .title {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.accordion .title:hover {
+  background: #f1f1f1;
+}
+
+.accordion .title span {
+  font-size: 20px;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.accordion .content {
+  padding: 15px 20px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+ button {
+  margin-bottom: 20px; 
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  
+  border-radius: 6px;
+  background: #4f46e5; /* nice indigo */
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
