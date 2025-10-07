@@ -4,6 +4,8 @@ import RandomColorGenerator from './components/random-color-generator/index.jsx'
 import StarRating from './components/star-rating/Index.jsx'
 import ImageSlider from './components/image-slider/Index.jsx'
 import LoadMoreProducts from './components/load-more-products/index.jsx'
+import ItemTree from './components/item-tree/index.jsx'
+import Data from './components/item-tree/data.js'
 
 const App = () => {
   return (
@@ -15,7 +17,8 @@ const App = () => {
       {/* <RandomColorGenerator /> */}
       {/* <StarRating /> */}
       {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={10}/> */}
-      <LoadMoreProducts />
+      {/* <LoadMoreProducts /> */}
+      <ItemTree menu={Data}/>
     </div>
   )
 }

@@ -1,0 +1,72 @@
+/* Container */
+.tree-view-container {
+    /* display: flex; */
+    margin: 20px auto;
+  width: 300px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+/* UL reset */
+.menu-list-container {
+    display: flex;
+    
+    flex-direction: column;
+  list-style: none;
+  padding-left: 16px;
+  margin: 6px 0;
+}
+
+/* LI item */
+.menu-item {
+  margin: 4px 0;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.menu-item:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+/* Item header (label + icon) */
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+}
+
+/* Label text */
+.menu-label {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+  
+}
+
+/* Toggle arrow */
+.toggle-icon {
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.toggle-icon:hover {
+  color: #000;
+}
+
+/* Nested children indent */
+.menu-list-container .menu-list-container {
+  margin-left: 14px;
+  border-left: 1px dashed #ccc;
+  padding-left: 10px;
+  display: flex;
+}
