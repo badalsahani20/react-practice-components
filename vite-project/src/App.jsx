@@ -7,6 +7,7 @@ import LoadMoreProducts from './components/load-more-products/index.jsx'
 import ItemTree from './components/item-tree/index.jsx'
 import Data from './components/item-tree/data.js'
 import QrCodeGenerator from './components/qr-code/QrCode.jsx'
+import DarkMode from './components/toggle-dark-mode/DarkMode.jsx'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       {/* <LoadMoreProducts /> */}
       <ItemTree menu={Data}/>
       <QrCodeGenerator />
+      <DarkMode />
     </div>
   )
 }

@@ -1,0 +1,50 @@
+/* Root theme variables */
+[data-theme="light"] {
+  --bg-color: #f5f5f5;
+  --text-color: #222;
+  --btn-bg: #e0e0e0;
+  --btn-text: #333;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #f5f5f5;
+  --btn-bg: #333;
+  --btn-text: #f5f5f5;
+}
+
+/* Container styles */
+.dark-mode {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Button styles */
+.dark-mode-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+  background-color: var(--btn-text);
+  color: var(--btn-bg);
+}
