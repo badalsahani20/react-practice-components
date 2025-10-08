@@ -6,6 +6,7 @@ import ImageSlider from './components/image-slider/Index.jsx'
 import LoadMoreProducts from './components/load-more-products/index.jsx'
 import ItemTree from './components/item-tree/index.jsx'
 import Data from './components/item-tree/data.js'
+import QrCodeGenerator from './components/qr-code/QrCode.jsx'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={10}/> */}
       {/* <LoadMoreProducts /> */}
       <ItemTree menu={Data}/>
+      <QrCodeGenerator />
     </div>
   )
 }
