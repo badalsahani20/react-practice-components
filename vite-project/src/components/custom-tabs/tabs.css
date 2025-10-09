@@ -1,0 +1,44 @@
+/* Container for all tabs */
+.heading {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px; /* space between tabs */
+}
+
+/* Individual tab button */
+.heading div {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+}
+
+/* Hover effect */
+.heading div:hover {
+  background-color: #f0f0f0;
+}
+
+/* Active tab */
+.heading div.active {
+  border-bottom: 3px solid #8b02b5;
+  color: #8b02b5;
+  background-color: #fff;
+}
+
+/* Content area */
+.content {
+  margin-top: -5px; /* overlap border nicely */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 0 4px 4px 4px;
+  min-height: 100px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}

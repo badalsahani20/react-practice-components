@@ -9,6 +9,7 @@ import Data from './components/item-tree/data.js'
 import QrCodeGenerator from './components/qr-code/QrCode.jsx'
 import DarkMode from './components/toggle-dark-mode/DarkMode.jsx'
 import ScrollIndicator from './components/scroll-indicator/ScrollIndicator.jsx'
+import TabTest from './components/custom-tabs/TabTest.jsx'
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
       {/* <ItemTree menu={Data}/> */}
       {/* <QrCodeGenerator /> */}
       {/* <DarkMode /> */}
-      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
+      {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
+      <TabTest />
     </div>
   )
 }
