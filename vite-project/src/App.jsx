@@ -8,6 +8,7 @@ import ItemTree from './components/item-tree/index.jsx'
 import Data from './components/item-tree/data.js'
 import QrCodeGenerator from './components/qr-code/QrCode.jsx'
 import DarkMode from './components/toggle-dark-mode/DarkMode.jsx'
+import ScrollIndicator from './components/scroll-indicator/ScrollIndicator.jsx'
 
 const App = () => {
   return (
@@ -20,9 +21,10 @@ const App = () => {
       {/* <StarRating /> */}
       {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={10}/> */}
       {/* <LoadMoreProducts /> */}
-      <ItemTree menu={Data}/>
-      <QrCodeGenerator />
-      <DarkMode />
+      {/* <ItemTree menu={Data}/> */}
+      {/* <QrCodeGenerator /> */}
+      {/* <DarkMode /> */}
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/>
     </div>
   )
 }
