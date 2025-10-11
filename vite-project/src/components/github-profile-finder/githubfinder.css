@@ -1,0 +1,100 @@
+.github-profile-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.input-wrapper input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 60%;
+  transition: border-color 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #6200ea;
+}
+
+.profile-founder-btn {
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-founder-btn:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.user:hover {
+  transform: translateY(-4px);
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #6200ea;
+  object-fit: cover;
+}
+
+.user a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+}
+
+.user a:hover {
+  text-decoration: underline;
+}
+
+.user p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.user > div:nth-child(n+3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}

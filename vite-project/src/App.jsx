@@ -11,6 +11,8 @@ import DarkMode from './components/toggle-dark-mode/DarkMode.jsx'
 import ScrollIndicator from './components/scroll-indicator/ScrollIndicator.jsx'
 import TabTest from './components/custom-tabs/TabTest.jsx'
 import ModelTest from './components/custom-model-popup/ModelTest.jsx'
+import GitHubProfileFinder from './components/github-profile-finder/GitHubFinder.jsx'
+
 
 const App = () => {
   return (
@@ -28,7 +30,8 @@ const App = () => {
       {/* <DarkMode /> */}
       {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
       {/* <TabTest /> */}
-      <ModelTest />
+      {/* <ModelTest /> */}
+      <GitHubProfileFinder />
     </div>
   )
 }
