@@ -15,7 +15,10 @@ const ModelTest = () => {
     <div className='model-test-container'>
         <button className='model-toggle' onClick={handleToggleModel}>Open Model</button>
         {
-          showModel && <Model onClose={onClose} body={<div>Customized body</div>} />
+          showModel && <Model onClose={onClose} 
+          body={<div>Customized body</div>}
+          header={"Customized Header"} 
+          footer={"Customized Footer"}/>
         }
     </div>
   )
