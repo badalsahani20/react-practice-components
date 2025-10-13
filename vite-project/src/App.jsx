@@ -12,6 +12,7 @@ import ScrollIndicator from './components/scroll-indicator/ScrollIndicator.jsx'
 import TabTest from './components/custom-tabs/TabTest.jsx'
 import ModelTest from './components/custom-model-popup/ModelTest.jsx'
 import GitHubProfileFinder from './components/github-profile-finder/GitHubFinder.jsx'
+import AutoComplete from './components/search-auto-complete/AutoComplete.jsx'
 
 
 const App = () => {
@@ -31,7 +32,8 @@ const App = () => {
       {/* <ScrollIndicator url={'https://dummyjson.com/products?limit=100'}/> */}
       {/* <TabTest /> */}
       {/* <ModelTest /> */}
-      <GitHubProfileFinder />
+      {/* <GitHubProfileFinder /> */}
+      <AutoComplete />
     </div>
   )
 }
