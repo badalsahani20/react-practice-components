@@ -25,25 +25,13 @@ const AutoComplete = () => {
     } catch (error) {
       setLoading(false);
       setError(error.message);
+    }finally{
+      setLoading(false);
     }
   }
 
   function handleChange(e) {
-
     setSearchParam(e.target.value.toLowerCase());
-    // const query = e.target.value.toLowerCase();
-    // setSearchParam(query);
-
-    // if(query.length > 1) {
-    //     const filteredData = user && user.length ?
-    //     user.filter(item => item.toLowerCase().indexOf(query) > -1) // -1 stands for check if present
-    //     : [];
-    //     setFilteredUsers(filteredData);
-    //     setShowDropDown(true);
-
-    // }else{
-    //     setShowDropDown(false);
-    // }
   }
 
   useEffect(() => {

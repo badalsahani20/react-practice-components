@@ -1,0 +1,33 @@
+.game-container::after{
+    /* clear: both; */
+    /* content: ""; */
+    /* display: table; */
+}
+
+.game-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 30px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 5px; /* spacing between squares */
+}
+
+.square{
+    border: 1px solid red;
+    /* float: left; */
+    font-size: 40px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    cursor: pointer;
+    gap: 10px;
+}

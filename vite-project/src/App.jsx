@@ -13,6 +13,7 @@ import TabTest from './components/custom-tabs/TabTest.jsx'
 import ModelTest from './components/custom-model-popup/ModelTest.jsx'
 import GitHubProfileFinder from './components/github-profile-finder/GitHubFinder.jsx'
 import AutoComplete from './components/search-auto-complete/AutoComplete.jsx'
+import TicTacToe from './components/tic-tac-toe/TicTacToe.jsx'
 
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
       {/* <TabTest /> */}
       {/* <ModelTest /> */}
       {/* <GitHubProfileFinder /> */}
-      <AutoComplete />
+      {/* <AutoComplete /> */}
+      <TicTacToe />
     </div>
   )
 }
