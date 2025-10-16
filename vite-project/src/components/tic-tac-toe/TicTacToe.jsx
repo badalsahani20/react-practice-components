@@ -15,7 +15,7 @@ const TicTacToe = () => {
 
   function handleClick(index) {
     const cpydata = [...squares];
-    if (getWinner(cpydata) || cpydata[index] || (cpydata[index] !== '')) return;
+    if (getWinner(cpydata) || cpydata[index]) return;
     cpydata[index] = isXNext ? 'X' : 'O';
     setIsXNext(!isXNext);
     setSquares(cpydata);
@@ -44,16 +44,26 @@ const TicTacToe = () => {
   }
 
   useEffect(() => {
-    if(!getWinner(squares)){
-      setStatus('Next player: ' + (isXNext ? 'X' : 'O'));
+    const winner = getWinner(squares);
+
+    if(!winner && squares.every(item => item !== '')){
+      setStatus("This is a draw! Please restart the game");
+    }else if(winner){
+      setStatus('Winner: Player ' + winner);
     }else{
-      setStatus('Winner: ' + getWinner(squares));
+      setStatus('Next player: ' + (isXNext ? 'X' : 'O'));
     }
   }, [squares, isXNext])
-  // const [isONext, setIsONext] = useState(true);
 
-  return (
+  function restartGame() {
+    setSquares(Array(9).fill(''));
+    setIsXNext(true);
+    setStatus(null);
+  }
+
+return (
     <div className='game-container'>
+      <h1 className='tic-tac-toe'>Tic Tac Toe</h1>
       <div className='row'>
         <Square value={squares[0]} onClick={() => handleClick(0)} />
         <Square value={squares[1]} onClick={() => handleClick(1)} />
@@ -69,9 +79,12 @@ const TicTacToe = () => {
         <Square value={squares[7]} onClick={() => handleClick(7)} />
         <Square value={squares[8]} onClick={() => handleClick(8)} />
       </div>
-      <div className='row'></div>
+      <h1>{status}</h1>
+      {getWinner(squares) && <h1>Please Restart The Game</h1>}
+      <button className='restart-btn' onClick={restartGame}>Restart</button>
     </div>
-  )
+
+)
 }
 
 

@@ -30,7 +30,7 @@
   border-color: #00796b;
 }
 
-button {
+.qr-container button {
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #00796b;
@@ -41,12 +41,12 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:disabled {
+.qr-container button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
-button:hover:not(:disabled) {
+.qr-container button:hover:not(:disabled) {
   background-color: #004d40;
 }
 
