@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import MenuList from './MenuList';
 import { FiChevronDown, FiChevronRight } from 'react-icons/fi';
 

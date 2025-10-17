@@ -14,6 +14,8 @@ import ModelTest from './components/custom-model-popup/ModelTest.jsx'
 import GitHubProfileFinder from './components/github-profile-finder/GitHubFinder.jsx'
 import AutoComplete from './components/search-auto-complete/AutoComplete.jsx'
 import TicTacToe from './components/tic-tac-toe/TicTacToe.jsx'
+import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx'
+import FeatureFlags from './components/feature-flag/index.jsx'
 
 
 const App = () => {
@@ -35,7 +37,10 @@ const App = () => {
       {/* <ModelTest /> */}
       {/* <GitHubProfileFinder /> */}
       {/* <AutoComplete /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </div>
   )
 }
