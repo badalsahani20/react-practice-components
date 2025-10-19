@@ -18,6 +18,7 @@ import FeatureFlagGlobalState from './components/feature-flag/context/index.jsx'
 import FeatureFlags from './components/feature-flag/index.jsx'
 import UseFetchHookTest from './components/custom-fetch/test.jsx'
 import UseOnClickOutSideTest from './components/use-outside-click/test.jsx'
+import UseWindowResizeTest from './components/use-window-resize/test.jsx'
 
 
 const App = () => {
@@ -44,7 +45,8 @@ const App = () => {
         <FeatureFlags />
       </FeatureFlagGlobalState> */}
       {/* <UseFetchHookTest /> */}
-      <UseOnClickOutSideTest />
+      {/* <UseOnClickOutSideTest /> */}
+      <UseWindowResizeTest />
     </div>
   )
 }
